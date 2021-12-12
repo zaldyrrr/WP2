@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Contact Me</title>
+	<link rel = "stylesheet" href = "CSS/styles.css"/>
+</head>
+
+<body>
+	<!-- This acts like the header -->
+	<iframe src="tin_header.html" height="350" width="1200" title="Tin Header" style="border:none;"></iframe>	
+	<hr>
+	
+	<!-- This is the nav menu -->
+	<div class="topnav">
+		<a href="index.html">Home</a>
+		<a href="hobbies.html">My Hobbies</a>
+		<a class="active" href="contact.html">Contact Christine</a>
+	</div>	
+	<hr>
+	
+	<h1>How can I help you?</h1>
+	<form >
+		<label>Your Name:</label>
+		<input type="text" id="yourName" name="yourName"><br>
+		<label>Your Email:</label>
+		<input type="email" name="yourEmail"><br>
+		<label>Your Message:</label><br>
+		<textarea name="yourMessage" rows="10" cols="30"></textarea><br>
+		<input type="submit" name="" id="btnsubmit">
+	</form>
+	
+	<script>
+		var name1= document.getElementById("yourName");
+		btnsubmit.addEventListener("click", function () {
+			alert("Hello "+name1.value+"! Thank you for contacting Chrisitine. Your message is being processed by the server.");
+		});
+	</script>
+
+</body>
+
+</html>
